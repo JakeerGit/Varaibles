@@ -21,6 +21,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
     <sub-flow name="flowvarSub_Flow">
         <set-payload value="#[&quot;This is SessionPayload&quot;]" doc:name="Set Payload"/>
         <logger message="#[payload]" level="INFO" doc:name="Logger"/>
+		<logger message="This is Git Logger" level="INFO" doc:name="Logger"/>
         <set-session-variable variableName="SessionVar" value="#[&quot;This is SessionVar From Flow&quot;]" doc:name="Session Variable"/>
     </sub-flow>
 </mule>
